@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>картинки</title>
+</head>
+<body>
+<center><img src="kartinka1.jpg" id="1" width="200"></img><br/>
+<button onclick="click1()"><</button>
+<button onclick="click2()">></button>
+    </center>
+<audio src="zvon-brosanija-monet%20(www.mp3cut.ru).mp3" id="2"></audio>
+</body>
+<script>
+    number=1
+    function click1() {
+        number=number+1
+        if(number>5)
+            number=1
+        if(number == 1){
+            document.getElementById('1').src = 'kartinka1.jpg'
+        }if(number == 2){
+            document.getElementById('1').src = 'kartinka2.jpg'
+        }if(number == 3){
+            document.getElementById('1').src = 'kartinka3.jpg'
+        }if(number == 4){
+            document.getElementById('1').src = 'kartinka4.jpg'
+        }if(number == 5){
+            document.getElementById('1').src = 'kartinka5.jpg'
+        }
+            document.getElementById('2').play()
+    }
+    function click2() {
+        number = number - 1
+        if(number<1)
+            number=5
+        if(number == 1){
+            document.getElementById('1').src = 'kartinka1.jpg'
+        }if(number == 2){
+            document.getElementById('1').src = 'kartinka2.jpg'
+        }if(number == 3){
+            document.getElementById('1').src = 'kartinka3.jpg'
+        }if(number == 4){
+            document.getElementById('1').src = 'kartinka4.jpg'
+        }if(number == 5){
+            document.getElementById('1').src = 'kartinka5.jpg'
+        }
+            document.getElementById('2').play()
+    }
+    </script>
+</html>
